@@ -14,7 +14,7 @@ app.get("/status", (req, res) => {
 });
 
 // === Vendor C API Route: Mengambil data dari Neon dan me-NESTED-kannya kembali ===
-app.get("/products/nested", async (req, res, next) => {
+app.get("/products/makanan", async (req, res, next) => {
   try {
     const sql = `
       SELECT id, "details_name", "details_category", 
